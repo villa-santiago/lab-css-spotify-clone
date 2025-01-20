@@ -7,27 +7,38 @@ White: #FFF
 
 */
 
-body{
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* background-color: rgb(37, 151, 151); */
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
 }
 
 nav {
-    width: 100%;
+    background-color: white;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 99999;
 }
 
-h1{
-    font-size: 72px;
-    margin-top: 0px;
+
+
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.links li {
+    margin-right: 20px;
 }
 
 nav img {
@@ -35,137 +46,99 @@ nav img {
     height: auto;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    
-    gap: 15px;
-
-}
-
-
-
-.intro-text { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    text-align: center;
-    margin-top: 81px;
+#banner-image {
+    height: 700px;
+    margin: 96px auto;
     background-image: url(/images/landing.jpg);
-    height: 600px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
-.intro-text h1 p{
-    padding: 0;
-    font-size: 32px;
+.intro-content {
+    position: relative;
+    top:30vh;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
-h2 {
-    font-size: 30px;
-    text-decoration: underline;
+.intro-content h1 {
+    margin: 20px;
+    font-size: 60px;
 }
 
-h3 {
+.intro-content p {
     font-size: 24px;
+    font-weight: 200;
 }
 
-h4 {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.feature {
-   
-   /* background-color: aqua;*/
+.features {
+    text-align: center;
 }
 
 .features-container {
-    text-align: center;
-}
-
-
-.feature img {
-    width: 150px;
-    height: auto;
-}
-
-.flex-features {
     display: flex;
-   justify-content: space-evenly;
-}
-
-
-/* .outer-flex, .inner-flex {
-    display: flex;
-} */
-
-.outer-flex {
-    margin: 0px 30px;
-}
-
-
-.inner-flex {
-    color: white;
-    padding: 4rem;
-    background-color: #00B172;
-    display: flex;
+    /* height: 300px; */
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
-.inner-flex p {
-    max-width: 350px;
+.features h2 {
+    margin-bottom: 80px;
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-color: #00B172;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px
 }
 
-
-.flex-image {
-    width: 250px;
-}
-
-.icon {
-    width: 100px;
-    height: 100px;
-}
-
-
-
-/* .promotional {
-    color: white;
-    margin-top: 50px;
-    background-color: rgb(4, 180, 104);
+.single-feature {
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    
-    
+    text-align: center;
+    width: 250px;
+    box-shadow: 10px 10px 1px #00B172;
 }
 
-.promotional-item{
-    width: 50%;
-    padding: 20px;
-    background-color: chocolate;
-    
+.icons {
+    width: 100px;
 }
 
-.promotional-item p {
-    width: 50%;
-    max-width: 350px;
-    
+footer {
+    background-color: #00B172;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 85px;
 }
 
-.promotional-image {
-    background-color: indianred;
-    height: 550px;
-    border-radius: 12px;
+footer article {
+    max-width: 400px;
 }
 
-.app {
-    width: 50%;
-} */
+.spotify-logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:47%;
+    left: 47%;
+}
+
+.spotify-image {
+    height: 415px;
+}
+
+.article-wrapper {
+    color: white;
+}
